@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Task </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    header{
+        text-align: center;
+        background-color:lightblue;
+        font-family: Arial;
+        color: black;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    body{
+        background-color: antiquewhite;    
+    }
+    button{
+        position: absolute;
+        left: 50%;
+    }
+</style>
+<body>
+    <header>Lab 6 Task-5</header>
+    <br> 
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <label>Name</label>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-1">
+                <label>Phone</label>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control">
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="col-1">
+                <label>Email</label>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-8">
+                <fieldset  class="form-control">
+                    <legend>Which taxi you required:</legend>
+                    <div class="form-check-inline">
+                        <label>
+                            <input type="radio" name="taxi" id="car" value="Car">Car
+                        </label>
+                        <label >
+                            <input type="radio" name="taxi" id="van" value="Van">Van
+                        </label>
+                        <label >
+                            <input type="radio" name="taxi" id="tuktuk" value="tuk tuk">TUk Tuk
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-8">
+                <fieldset class="form-control">
+                    <legend>Extras</legend>
+                    <div class="form-check-inline">
+                        <label >
+                            <input type="checkbox" name="taxi" id="car" value="Car">Baby seat
+                        </label>
+                        <label >
+                            <input type="checkbox" name="taxi" id="van" value="Van">Whelchair Access
+                        </label>
+                        <label >
+                            <input type="checkbox" name="taxi" id="tuktuk" value="tuk tuk">Stock tip
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2">
+                <label>Pickup Date/time</label>
+            </div>
+            <div class="col-6">
+                <input type="datetime-local" class="form-control" >
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2">
+                <label>Pickup Place</label>
+            </div>
+            <div class="col-6">
+                <input type="number" placeholder="Select One" class="form-control" >
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2">
+                <label>Dropoff Place</label>
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" >
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2">
+                <label>Special Instructions</label>
+            </div>
+            <div class="col-6">
+                <textarea cols="15" rows="3" class="form-control"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success">Submiting Booking</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

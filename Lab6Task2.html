@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Task </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+</head>
+<style>
+    header{
+        text-align: center;
+        background-color:lightblue;
+        font-family: Arial;
+        color: black;
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    .b1{
+        position: absolute;
+        left: 50%;
+        color: aliceblue;
+        background-color: forestgreen;
+        font-weight: bolder;
+    }
+    .b2{
+        position: absolute;
+        left: 60%;
+        font-weight: bolder;
+    }
+</style>
+<body>
+    <header>Lab 6 Task-2</header>
+    <br>
+    <div class="container">
+        <div class="row ">
+            <div class="col">
+                <label>Subject</label>
+                <select class="form-control">
+                    <option selected>Accounting-ACC</option>
+                    <option>Software Engineering-SE</option>
+                    <option>Computer Science-CS</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>Location</label>
+                <select class="form-control">
+                    <option selected>-All-</option>
+                    <option>Lahore</option>
+                    <option>Lasur</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <label>Keywords</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col">
+                <label>Days</label>
+                <div>
+                    <label>Sun</label>
+                    <input type="checkbox">
+                    <label>Mon</label>
+                    <input type="checkbox">
+                    <label>Tue</label>
+                    <input type="checkbox">
+                    <label>Wed</label>
+                    <input type="checkbox">
+                    <label>Thu</label>
+                    <input type="checkbox">
+                    <label>Fri</label>
+                    <input type="checkbox">
+                    <label>Sat</label>
+                    <input type="checkbox">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <label>Class Type</label>
+                <select class="form-control">
+                    <option selected>-All-</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>Day/Night</label>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="time-of-day" value="any" id="any-time">
+                    <label for="any-time">-Any-</label>
+                    <label>&nbsp;</label>
+                    <label>&nbsp;</label>
+                    <input type="radio" name="time-of-day" value="day" id="day-time">
+                    <label for="day-time">Day Only</label>
+                    <label>&nbsp;</label>
+                    <label>&nbsp;</label>
+                    <input type="radio" name="time-of-day" value="night" id="night-time">
+                    <label for="night-time">Night Only</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="b1">Show Classes</button>
+            <button type="reset" class="b2">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
